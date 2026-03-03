@@ -49,3 +49,8 @@ After training, metrics are saved in:
 - `outputs/random_forest/`
 
 Each run saves a separate JSON file with date and time in the filename.
+
+## Feature importance (random forest regression)
+The model is strongly driven by median income, which accounts for more than 50% of total feature importance. 
+Geographic features (latitude and longitude) also contribute significantly, confirming the spatial nature of housing prices. 
+Engineered ratio-based features provide additional predictive value, while raw room counts appear less informative.
