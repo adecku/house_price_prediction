@@ -1,0 +1,28 @@
+{
+  "model": "rfr",
+  "tuned": true,
+  "metrics": {
+    "mae": 0.331612308322906,
+    "mse": 0.2580250370176131,
+    "rmse": 0.507961649160262,
+    "r2": 0.8030957958148399
+  },
+  "cv_metrics": {
+    "mae_mean": 0.33753073476765005,
+    "mae_std": 0.005042068699503137,
+    "mse_mean": 0.26212265758408826,
+    "mse_std": 0.003599468308420622,
+    "rmse_mean": 0.511967059736302,
+    "rmse_std": 0.0035195637590581573,
+    "r2_mean": 0.8037866286089891,
+    "r2_std": 0.004808496196827994,
+    "cv_folds": 5
+  },
+  "best_params": {
+    "model__n_estimators": 300,
+    "model__min_samples_split": 5,
+    "model__min_samples_leaf": 1,
+    "model__max_features": 0.8,
+    "model__max_depth": null
+  }
+}

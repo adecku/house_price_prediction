@@ -35,7 +35,7 @@ Measured metrics:
 
 Conslusions:
 - MAE, MSE and RMSE went down, whereas R2 went up
-- This is not "overfitting" because the correction is moderate.
+- This is not overfitting because the correction is moderate.
 
 ### Random Forest Regression
 Measured metrics:
@@ -45,3 +45,39 @@ Measured metrics:
 - R2 (Coefficient of determination): 0.7809
 
 The substantial performance improvement from Linear Regression (R² ≈ 0.59) to Random Forest (R² ≈ 0.78) indicates that the relationship between features and target is strongly non-linear.
+
+### Random Forest Regression - Cross Variation
+Measured metrics:
+- MAE (Mean Average Error): 0.3555 +- 0.0072
+- MSE (Mean Square Error): 0.2891 +- 0.0083
+- RMSE (Root Mean Square Error): 0.5376 +- 0.0077
+- R2 (Coefficient of determination): 0.7836 +- 0.0082
+
+Achieved R² ≈ 0.78 with low cross-validation variance (±0.008), demonstrating strong generalization and superior modeling of non-linear feature interactions.
+
+### Random Forest Regression - Finetuning
+Used following values of parameters:
+param_distributions = {
+        "model__n_estimators": [100, 200, 300, 500],
+        "model__max_depth": [None, 5, 10, 20, 30],
+        "model__min_samples_split": [2, 5, 10, 20],
+        "model__min_samples_leaf": [1, 2, 4, 8],
+        "model__max_features": ["sqrt", "log2", 0.5, 0.8],
+    }
+
+Best combination:
+"best_params": {
+    "model__n_estimators": 300,
+    "model__min_samples_split": 5,
+    "model__min_samples_leaf": 1,
+    "model__max_features": 0.8,
+    "model__max_depth": null
+  }
+
+Best measured metrics:
+- MAE (Mean Average Error): 0.3316
+- MSE (Mean Square Error): 0.2580
+- RMSE (Root Mean Square Error): 0.5080
+- R2 (Coefficient of determination): 0.8030
+
+There is no observed over or underfitting, good balance bias-variance. The model seems to be well tuned - close to the maximum. 
