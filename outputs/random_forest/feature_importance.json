@@ -1,0 +1,46 @@
+[
+  {
+    "feature": "num__MedInc",
+    "importance": 0.5197743597490632
+  },
+  {
+    "feature": "num__Latitude",
+    "importance": 0.0874659729417181
+  },
+  {
+    "feature": "num__Longitude",
+    "importance": 0.08672793330125973
+  },
+  {
+    "feature": "num__population_per_household",
+    "importance": 0.06777386040283176
+  },
+  {
+    "feature": "num__AveOccup",
+    "importance": 0.06655323892185121
+  },
+  {
+    "feature": "num__HouseAge",
+    "importance": 0.051962830221880724
+  },
+  {
+    "feature": "num__bedrooms_ratio",
+    "importance": 0.035544698733766054
+  },
+  {
+    "feature": "num__Population",
+    "importance": 0.028780218000807187
+  },
+  {
+    "feature": "num__AveBedrms",
+    "importance": 0.02441489030736427
+  },
+  {
+    "feature": "num__AveRooms",
+    "importance": 0.01562512192388637
+  },
+  {
+    "feature": "num__rooms_per_household",
+    "importance": 0.015376875495571306
+  }
+]

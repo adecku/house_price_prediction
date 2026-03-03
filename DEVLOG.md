@@ -81,3 +81,9 @@ Best measured metrics:
 - R2 (Coefficient of determination): 0.8030
 
 There is no observed over or underfitting, good balance bias-variance. The model seems to be well tuned - close to the maximum. 
+
+### Add feature importance for random forest regression
+Results are in '/outputs/random_forest/'.
+
+Conslusion:
+The model is strongly driven by median income, which accounts for more than 50% of total feature importance. Geographic features (latitude and longitude) also contribute significantly, confirming the spatial nature of housing prices. Engineered ratio-based features provide additional predictive value, while raw room counts appear less informative.
