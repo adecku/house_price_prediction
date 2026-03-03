@@ -39,7 +39,7 @@ python src/train.py --model {model_name}
 
 Available models:
 - Linear Regression (`lr`)
-- Random Forest Regression (`rf`)
+- Random Forest Regression (`rfr`)
 
 ## Results
 
